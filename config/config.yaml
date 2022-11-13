@@ -1,0 +1,5 @@
+FilePath: {username: 'E:\GitHub\AttackTomcat\config\username.txt', password: 'E:\GitHub\AttackTomcat\config\password.txt'}
+Proxy:
+  Http: {host: 127.0.0.1, port: '8080', isOn: 'false'}
+  Socket: {host: 127.0.0.1, port: '1080', username: null, password: null, isOn: 'false'}
+Version: [1.0]

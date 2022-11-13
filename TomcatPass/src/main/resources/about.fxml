@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="95.0" layoutY="235.0" prefHeight="123.0" prefWidth="424.0" text="GitHub：https://github.com/tpt11fb/AttackTomcat">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="209.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/about.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.text.Text?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController.MainController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="代理">
+                    <items>
+                        <MenuItem fx:id="httpProxy" mnemonicParsing="false" onAction="#settingHttpProxy" text="HTTP代理" />
+                        <MenuItem fx:id="socketProxy" mnemonicParsing="false" onAction="#settingScoketProxy" text="Socket代理" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="设置">
+                    <items>
+                        <MenuItem fx:id="Dict" mnemonicParsing="false" onAction="#setDict" text="设置爆破字典" />
+                        <MenuItem fx:id="reset" mnemonicParsing="false" onAction="#setReset" text="重新加载配置" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                    <items>
+                        <MenuItem fx:id="updata" mnemonicParsing="false" onAction="#showUpdata" text="更新" />
+                        <MenuItem fx:id="about" mnemonicParsing="false" onAction="#showAbout" text="关于" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane prefHeight="478.0" prefWidth="839.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="漏洞检测">
+                    <content>
+                        <VBox prefHeight="395.0" prefWidth="837.0">
+                            <children>
+                                <HBox prefHeight="47.0" prefWidth="768.0" spacing="10.0">
+                                    <children>
+                                        <TextField fx:id="url"  maxWidth="Infinity" prefHeight="27.0" prefWidth="654.0" HBox.hgrow="ALWAYS" />
+                                        <Button fx:id="requestUrl" maxWidth="-Infinity" mnemonicParsing="false" onAction="#reqUrl" prefHeight="27.0" prefWidth="68.0" text="执行" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="5.0" top="5.0" />
+                                    </padding>
+                                </HBox>
+                                <TextArea fx:id="readmeArea" maxWidth="Infinity" prefHeight="151.0" prefWidth="768.0" VBox.vgrow="ALWAYS" />
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+                <Tab text="AJP漏洞利用">
+                    <content>
+                        <VBox prefHeight="395.0" prefWidth="837.0">
+                            <children>
+                                <HBox prefHeight="47.0" prefWidth="768.0" spacing="10.0">
+                                    <children>
+                                        <Text text=" IP" />
+                                        <TextField fx:id="ip"  maxWidth="Infinity" prefHeight="27.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                        <Text text=" Port" />
+                                        <TextField fx:id="port"  maxWidth="Infinity" prefHeight="27.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                                        <Text text=" 路径" />
+                                        <TextField fx:id="path"  maxWidth="Infinity" prefHeight="27.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                                        <Button fx:id="attack" maxWidth="-Infinity" mnemonicParsing="false" onAction="#attackAJP" prefHeight="27.0" prefWidth="68.0" text="执行" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="5.0" top="5.0" />
+                                    </padding>
+                                </HBox>
+                                <TextArea fx:id="readmearea2" maxWidth="Infinity" prefHeight="151.0" prefWidth="768.0" VBox.vgrow="ALWAYS" />
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+
+            </tabs>
+            <padding>
+                <Insets bottom="5.0" />
+            </padding>
+        </TabPane>
+        <TitledPane animated="false" collapsible="false" maxHeight="Infinity" prefHeight="127.0" prefWidth="992.0"
+                    text="日志输出" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets bottom="5.0"/>
+            </padding>
+            <TextArea fx:id="outLog" prefHeight="200.0" prefWidth="200.0"/>
+        </TitledPane>
+    </children>
+</VBox>

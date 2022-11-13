@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="312.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController.ProxyHttpController">
+   <children>
+      <TextField fx:id="hHost" layoutX="87.0" layoutY="119.0" />
+      <TextField fx:id="hPort" layoutX="86.0" layoutY="182.0" />
+      <Text layoutX="32.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host" />
+      <Text layoutX="33.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" />
+      <Button layoutX="59.0" layoutY="243.0" mnemonicParsing="false" onAction="#saveHTTP" text="确定" />
+      <Button fx:id="closeButton" layoutX="224.0" layoutY="243.0" mnemonicParsing="false" onAction="#close" text="取消" />
+      <Text layoutX="59.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HTTP代理主要用于数据包检测" />
+      <RadioButton fx:id="on" layoutX="64.0" layoutY="71.0" mnemonicParsing="false" text="开启" />
+      <RadioButton fx:id="off" layoutX="223.0" layoutY="71.0" mnemonicParsing="false" text="关闭" />
+   </children>
+</AnchorPane>

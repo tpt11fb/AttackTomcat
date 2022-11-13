@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="405.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UIController.ProxySocketController">
+   <children>
+      <Text layoutX="27.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host" />
+      <Text layoutX="29.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" />
+      <Text layoutX="22.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="用户名" />
+      <Text layoutX="27.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码" />
+      <Button layoutX="55.0" layoutY="342.0" mnemonicParsing="false" onAction="#saveSocket" text="确定" />
+      <Button fx:id="closeButton" layoutX="216.0" layoutY="342.0" mnemonicParsing="false" onAction="#close" text="取消" />
+      <TextField fx:id="sHost" layoutX="82.0" layoutY="108.0" />
+      <TextField fx:id="sPort" layoutX="82.0" layoutY="168.0" />
+      <TextField fx:id="us" layoutX="82.0" layoutY="226.0" />
+      <TextField fx:id="passwd" layoutX="82.0" layoutY="284.0" />
+      <Text layoutX="54.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="通过Socket代理，测试内网应用" />
+      <RadioButton fx:id="on" layoutX="54.0" layoutY="61.0" mnemonicParsing="false" text="开启" />
+      <RadioButton fx:id="off" layoutX="213.0" layoutY="61.0" mnemonicParsing="false" text="关闭" />
+   </children>
+</AnchorPane>
