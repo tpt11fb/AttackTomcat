@@ -13,15 +13,15 @@ CVE-2020-1938 Tomcat 文件读取/包含
 
 ​	双击jar包即可运行或执行`java -jar AttackTomcat`
 
-![image-20221113190826427](E:\GitHub\AttackTomcat\images\image-20221113190826427.png)
+![image-20221113190826427](https://github.com/tpt11fb/AttackTomcat/tree/main/images/image-20221113190826427.png)
 
-![image-20221113190913584](E:\GitHub\AttackTomcat\images\image-20221113190913584.png)
+![image-20221113190913584](https://github.com/tpt11fb/AttackTomcat/tree/main/images/image-20221113190913584.png)
 
 ## 代理
 
 ​	使用http和socket代理。
 
-![image-20221113191041737](E:\GitHub\AttackTomcat\images\image-20221113191041737.png)
+![image-20221113191041737](https://github.com/tpt11fb/AttackTomcat/tree/main/images/image-20221113191041737.png)
 
 ## 配置
 
@@ -31,7 +31,7 @@ CVE-2020-1938 Tomcat 文件读取/包含
 
 ​	注意：若出现如下提示，建议直接下载Release中的AttackTomcat.zip。
 
-![image-20221113191218888](E:\GitHub\AttackTomcat\images\image-20221113191218888.png)
+![image-20221113191218888](https://github.com/tpt11fb/AttackTomcat/tree/main/images/image-20221113191218888.png)
 
 ## 说明
 
